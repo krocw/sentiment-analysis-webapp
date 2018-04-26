@@ -1,4 +1,7 @@
 language:python
-sudo:required
-before_install:sudo pip install -r requirements.txt
-script app.py
+python:
+   - "3.6"
+install:
+  -pip install -r requirements.txt
+script:
+  -pytest
